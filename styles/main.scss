@@ -1,10 +1,10 @@
 @import "colors";
 @import "typography";
 @import "normalize";
-/*{
+*{
     border: 1px solid red;
 
-} */
+} 
 *,
 *::before,
 *::after {
@@ -14,6 +14,10 @@
 body {
     background-color: #536954;
     overflow-y: overlay;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .fade-in {
@@ -85,13 +89,14 @@ h2.fade-in.appear {
     z-index: 99;
     padding-top: 20em;
     background-color: #536954;
-    transition: 0.8s;
+    transition:all 0.8s ease-out;
     clip-path: circle(100px at 100% -20%);
+    -webkit-clip-path: circle(100px at 100% -20%);
 }
 
 .mobile-nav.is-active {
     width: 100%;
-    height: 100vh;
+   -webkit-clip-path: circle(100%);
     clip-path: circle(100%);
 }
 
