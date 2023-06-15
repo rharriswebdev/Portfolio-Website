@@ -1,7 +1,7 @@
 @import "colors";
 @import "typography";
 @import "normalize";
-/*{
+/* {
     border: 1px solid red;
 
 } */
@@ -175,6 +175,7 @@ h2.fade-in.appear {
     background-size: cover;
     background-position: center;
     position: relative;
+    transform: scale(1.2);
 
 
     .head {
@@ -527,31 +528,108 @@ h2.fade-in.appear {
 
 }
 
+.contact-section {
+    height: fit-content;
+    padding: 4rem 0 4rem 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #131714;
+    
+
+    .contact-container {
+        display: grid;
+        grid-template-rows: 4em 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 2em;
+        margin: 8em 0;
+        width: clamp(30em, 80vw, 50em);
+        background-color: #26254B;
+        border-radius: 9px;
+        padding: 2em 4em 8em 4em;
+    }
+
+    h4 {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: clamp(1em, 7vw, 3em);
+        color: white;
+        font-weight: 300;
+    }
+
+    form {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 30em;
+        font-family: 'Inter', sans-serif;
+        row-gap: 1.25em;
+
+        .contact-input {
+            width: clamp(20em, 60vw, 40em);
+            border-radius: 4px;
+            padding: 6px 8px;
+            text-decoration: none;
+            resize: none;
+            background-color: rgba($color: #ffffff, $alpha: 0.9);
+            border: 2px solid #90C5D0;
+        }
+
+        .contact-input:focus {
+
+        }
+        
+
+        input {
+            margin: 0;
+        }
+
+        textarea {
+            padding-top: 8px;
+            margin: 2em 0;
+        }
+
+        button {
+            width: fit-content;
+            justify-self: center;
+            padding: 4px 6em;
+            border-radius: 9px;
+            background-color: rgba(56, 121, 212, 0.5);
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+    }
+}
+
 footer {
-    height: auto;
-    background-color: #1F2320;
+    height: 15rem;
+    background-color: #131714;;
     display: grid;
     align-content: center;
     justify-content: center;
-    grid-template-rows: 1fr 1fr;
     color:white;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 1rem;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid #565656;
     
 }
 
+
 .footer-copy {
     text-align: center;
-    margin-bottom: 0;
+    margin-top: 4em;
 }
 
 .icon-container {
     display: flex;
     justify-content: center;
-    margin: 4em 0 0 0;
+    margin: 2em 0 0 0;
 }
 
 .github {
@@ -563,4 +641,9 @@ footer {
     width: 2.25em;
     margin: 0 1.25rem;
     transform: translateY(2px);
+}
+
+.replit {
+    width: 1.75em;
+    margin: 0 1.25em;
 }
