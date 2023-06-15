@@ -1,10 +1,10 @@
 @import "colors";
 @import "typography";
 @import "normalize";
-*{
+/*{
     border: 1px solid red;
 
-} 
+} */
 *,
 *::before,
 *::after {
@@ -234,7 +234,7 @@ h2.fade-in.appear {
 
     background-color:#536954;
     
-    padding: 6em 0;
+    padding: 10em 0;
     color: #ffffff;
     box-shadow: 0 20px 10px;
 
@@ -450,10 +450,10 @@ h2.fade-in.appear {
 }
 
 .skills {
-    padding-top: 1em;
+    
     height: fit-content;
     background-color: #8FB591;
-    padding-bottom: 6em;
+    padding: 4em 0 8em 0;
 
     .skills-hd {
         font-family: 'Inter';
@@ -528,9 +528,12 @@ h2.fade-in.appear {
 }
 
 footer {
-    height: 6vh;
+    height: auto;
     background-color: #1F2320;
-    display: flex;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
     color:white;
     font-family: 'Inter';
     font-weight: 400;
@@ -538,4 +541,26 @@ footer {
     align-items: center;
     justify-content: center;
     
+}
+
+.footer-copy {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin: 4em 0 0 0;
+}
+
+.github {
+    width: 2em;
+    margin: 0 1.25rem;
+}
+
+.linkedin {
+    width: 2.25em;
+    margin: 0 1.25rem;
+    transform: translateY(2px);
 }
