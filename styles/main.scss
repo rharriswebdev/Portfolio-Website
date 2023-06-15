@@ -1,10 +1,10 @@
 @import "colors";
 @import "typography";
 @import "normalize";
-* {
+/* {
     border: 1px solid red;
 
-} 
+} */
 *,
 *::before,
 *::after {
@@ -120,49 +120,14 @@ h2.fade-in.appear {
         color: #E7E98F;
     }
 
-
-.nav {
-    display: none;
-    height: 100%;
- // width: 0;
-  position: fixed; 
-  z-index: 1000; 
-  left: 0;
-  top: 0;
-  background-color: rgb(17, 30, 17, 0.9); 
-  background-color: transparent; 
-  overflow-x: hidden; 
-  transform: translateX();
-
- nav {
-    display: none;
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100vw; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; 
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-    
-
-  
-
-  a {
-    margin: 1em;
-  text-decoration: none;
-  font-size: 32px;
-    font-family: 'Montserrat';
-  color: #ffffff;
-  width: auto;
-  transition: 0.3s; 
-  }
-}
-}
-
+   
 
 .hero {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 4rem;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
     height: 58em;
     
     background-image:linear-gradient(rgba(0, 0, 0, 0.7), 
@@ -171,16 +136,17 @@ h2.fade-in.appear {
     background-size: auto 696px;
     background-repeat: no-repeat;
     overflow: hidden;
-    left: 0px;
+    text-decoration: none;
     background-size: cover;
     background-position: center;
     position: relative;
-    transform: scale(1.2);
+    
 
 
     .head {
         width: clamp(12vw, 80vw, 26rem);
         margin: auto;
+        text-decoration: none;
         
     
 
@@ -226,6 +192,21 @@ h2.fade-in.appear {
         }
 
     }
+}
+
+.nav {
+    visibility: hidden;
+    display: none;
+    
+    width: 100%;
+    color:#fff;
+
+font-family: 'Montserrat';
+font-size:clamp(.2rem, 2vw, 2em);
+}
+
+.desktop-nav {
+    text-decoration: none;
 }
 
 .intro {
@@ -545,10 +526,10 @@ h2.fade-in.appear {
         justify-content: center;
         row-gap: 2em;
         margin: 8em 0;
-        width: clamp(15em, 80vw, 30em);
+        width: clamp(14em, 80vw, 30em);
         background-color: #26254B;
         border-radius: 9px;
-        padding: 2em 4em 8em 4em;
+        padding: 3em 0;
     }
 
     h4 {
@@ -563,18 +544,22 @@ h2.fade-in.appear {
         display: grid;
         align-items: center;
         justify-content: center;
-        width: clamp(10em, 60vw, 20em);
+        width: clamp(12em, 75vw, 20em);
         font-family: 'Inter', sans-serif;
-        row-gap: 1.25em;
+        row-gap: 5px;
+
+        ::placeholder {
+            color: rgba($color: #adf1ff, $alpha: 0.9);
+        }
 
         .contact-input {
-            width: clamp(10em, 60vw, 20em);
-            border-radius: 4px;
+            width: clamp(3em, 70vw, 20em);
+            color: #fff;
             padding: 6px 8px;
             text-decoration: none;
             resize: none;
-            background-color: rgba($color: #ffffff, $alpha: 0.9);
-            border: 2px solid #90C5D0;
+            background-color: transparent;
+            border-bottom: 2px solid #90C5D0;
         }
 
         .contact-input:focus {
@@ -588,13 +573,15 @@ h2.fade-in.appear {
 
         textarea {
             padding-top: 8px;
-            margin: 2em 0;
+            margin: 20px 0 2em 0;
+            border: 2px solid #90C5D0;
+            border-radius: 4px;
         }
 
         button {
             width: fit-content;
             justify-self: center;
-            padding: 4px 6em;
+            padding: 4px 3em;
             border-radius: 9px;
             background-color: rgba(56, 121, 212, 0.5);
             color: #fff;
@@ -651,4 +638,40 @@ footer {
 .ratufa-popup-container {
     font-family: 'Inter';
     width: clamp(20em, 60vw, 40em);
+}
+
+@media screen and (min-width: 1000px) {
+    .nav-container {
+        display: none;
+    }
+
+  .nav {
+    display: flex;
+    visibility: visible;
+    width: 100%;
+    color: #fff;
+    
+    justify-content: space-between;
+  }
+
+  .desktop-nav {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+
+    .desktop-a {
+        color: white;
+        text-decoration: none;
+        margin: 0 4em;
+        transform: translateX(-24px);
+    }
+
+    .desktop-a:hover {
+        color: #90C5D0 ;
+    }
+  }
+
 }
