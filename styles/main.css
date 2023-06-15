@@ -308,10 +308,10 @@ template {
   display: none;
 }
 
-/* {
-    border: 1px solid red;
+* {
+  border: 1px solid red;
+}
 
-} */
 *,
 *::before,
 *::after {
@@ -770,7 +770,7 @@ h2.fade-in.appear {
   justify-content: center;
   row-gap: 2em;
   margin: 8em 0;
-  width: clamp(30em, 80vw, 50em);
+  width: clamp(15em, 80vw, 30em);
   background-color: #26254B;
   border-radius: 9px;
   padding: 2em 4em 8em 4em;
@@ -786,12 +786,12 @@ h2.fade-in.appear {
   display: grid;
   align-items: center;
   justify-content: center;
-  width: 30em;
+  width: clamp(10em, 60vw, 20em);
   font-family: "Inter", sans-serif;
   row-gap: 1.25em;
 }
 .contact-section form .contact-input {
-  width: clamp(20em, 60vw, 40em);
+  width: clamp(10em, 60vw, 20em);
   border-radius: 4px;
   padding: 6px 8px;
   text-decoration: none;
@@ -858,4 +858,9 @@ footer {
 .replit {
   width: 1.75em;
   margin: 0 1.25em;
+}
+
+.ratufa-popup-container {
+  font-family: "Inter";
+  width: clamp(20em, 60vw, 40em);
 }/*# sourceMappingURL=main.css.map */
