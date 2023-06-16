@@ -342,7 +342,7 @@ h2.fade-in.appear {
   position: absolute;
   right: 5px;
   display: inline-block;
-  width: 50px;
+  width: 14%;
   z-index: 100;
   cursor: pointer;
   margin: 2em 2em;
@@ -377,7 +377,7 @@ h2.fade-in.appear {
 }
 
 .no-scroll {
-  overflow-y: clip;
+  overflow-y: hidden;
 }
 
 .mobile-nav {
@@ -387,7 +387,7 @@ h2.fade-in.appear {
   left: 0;
   height: 100%;
   width: 100%;
-  min-height: 100vh;
+  min-height: 110vh;
   z-index: 99;
   padding-top: 20em;
   background-color: #536954;
@@ -798,10 +798,15 @@ h2.fade-in.appear {
   text-decoration: none;
   resize: none;
   background-color: transparent;
-  border-bottom: 2px solid #90C5D0;
+  outline: none;
+}
+.contact-section form .contact-input:focus {
+  border: #38f9d7;
 }
 .contact-section form input {
   margin: 0;
+  border: none;
+  border-bottom: 2px solid #90C5D0;
 }
 .contact-section form textarea {
   padding-top: 8px;
