@@ -16,9 +16,7 @@ body {
     overflow-y: overlay;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+
 
 .fade-in {
     opacity: 0;
@@ -318,6 +316,17 @@ font-size:clamp(.2rem, 2vw, 2em);
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
+                transition: 200ms;
+            }
+
+            .red:hover {
+                background-color: #ff0000;
+                box-shadow: 0 0 .2rem #E55A5A,
+                0 0 .2rem #E55A5A,
+                0 0 2rem #E55A5A,
+                0 0 0.8rem #ff0000,
+                0 0 2.8rem #ff0000,
+                inset 0 0 1.3rem #ff0000;
             }
             
             .yellow {
@@ -328,6 +337,17 @@ font-size:clamp(.2rem, 2vw, 2em);
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
+                transition: 200ms;
+            }
+
+            .yellow:hover {
+                background-color: #fcff45;
+                box-shadow: 0 0 .2rem #E7E98F,
+                0 0 .2rem #E7E98F,
+                0 0 2rem #E7E98F,
+                0 0 0.8rem #fcff45,
+                0 0 2.8rem #fcff45,
+                inset 0 0 1.3rem #fcff45;
             }
             
             .green {
@@ -338,8 +358,18 @@ font-size:clamp(.2rem, 2vw, 2em);
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
+                transition: 200ms;
             }
             
+            .green:hover {
+                background-color: #04ff00;
+                box-shadow: 0 0 .2rem #64B963,
+                0 0 .2rem #64B963,
+                0 0 2rem #64B963,
+                0 0 0.8rem #04ff00,
+                0 0 2.8rem #04ff00,
+                inset 0 0 1.3rem #04ff00;
+            }
 
 
         }

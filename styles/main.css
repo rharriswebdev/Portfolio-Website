@@ -323,10 +323,6 @@ body {
   overflow-y: overlay;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .fade-in {
   opacity: 0;
   filter: blur(5px);
@@ -579,6 +575,11 @@ h2.fade-in.appear {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  transition: 200ms;
+}
+.intro .code-container .toolbar .red:hover {
+  background-color: #ff0000;
+  box-shadow: 0 0 0.2rem #E55A5A, 0 0 0.2rem #E55A5A, 0 0 2rem #E55A5A, 0 0 0.8rem #ff0000, 0 0 2.8rem #ff0000, inset 0 0 1.3rem #ff0000;
 }
 .intro .code-container .toolbar .yellow {
   background-color: #E7E98F;
@@ -588,6 +589,11 @@ h2.fade-in.appear {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  transition: 200ms;
+}
+.intro .code-container .toolbar .yellow:hover {
+  background-color: #fcff45;
+  box-shadow: 0 0 0.2rem #E7E98F, 0 0 0.2rem #E7E98F, 0 0 2rem #E7E98F, 0 0 0.8rem #fcff45, 0 0 2.8rem #fcff45, inset 0 0 1.3rem #fcff45;
 }
 .intro .code-container .toolbar .green {
   background-color: #64B963;
@@ -597,6 +603,11 @@ h2.fade-in.appear {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  transition: 200ms;
+}
+.intro .code-container .toolbar .green:hover {
+  background-color: #04ff00;
+  box-shadow: 0 0 0.2rem #64B963, 0 0 0.2rem #64B963, 0 0 2rem #64B963, 0 0 0.8rem #04ff00, 0 0 2.8rem #04ff00, inset 0 0 1.3rem #04ff00;
 }
 .intro .code-container .int_para {
   font-family: "Source Code Pro";
