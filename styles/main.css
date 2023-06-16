@@ -381,7 +381,7 @@ h2.fade-in.appear {
 }
 
 .no-scroll {
-  overflow-y: hidden;
+  overflow-y: clip;
 }
 
 .mobile-nav {
@@ -754,7 +754,7 @@ h2.fade-in.appear {
   justify-content: center;
   row-gap: 2em;
   margin: 8em 0;
-  width: clamp(14em, 80vw, 30em);
+  width: clamp(14em, 90vw, 30em);
   background-color: #26254B;
   border-radius: 9px;
   padding: 3em 0;
