@@ -194,7 +194,7 @@ h2.fade-in.appear {
 .nav {
     visibility: hidden;
     display: none;
-    
+    text-align: center;
     width: 100dvw;
     color:#fff;
 
@@ -503,9 +503,7 @@ font-size:clamp(.2rem, 2vw, 2em);
             transition: ease-in 200ms;
         }
 
-        .icon {
-            width: clamp(.5em, 6vw, 2em);
-        }
+
 
         a {
             text-decoration: none;
@@ -582,7 +580,7 @@ font-size:clamp(.2rem, 2vw, 2em);
         row-gap: 5px;
 
         ::placeholder {
-            color: rgba($color: #adf1ff, $alpha: 0.9);
+            color: rgba($color: #adf1ff, $alpha: 0.5);
         }
 
         .contact-input {
@@ -594,13 +592,25 @@ font-size:clamp(.2rem, 2vw, 2em);
             background-color: transparent;
             
             
-            outline: none;
+            
             
         }
 
-        .contact-input:focus {
-            border: #38f9d7;
-        }
+       input:focus {
+        outline: none;
+        border-bottom: 2px solid rgba($color: #adf1ff, $alpha: 0.25);
+        
+       }
+
+       textarea:focus {
+        outline: none;
+        border: 2px solid rgba($color: #adf1ff, $alpha: 0.25);
+        
+       }
+
+       .contact-input::placeholder:focus {
+        color: rgba(56, 121, 212, 0.5);
+       }
         
 
         input {

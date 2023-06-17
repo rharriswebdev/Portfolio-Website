@@ -476,6 +476,7 @@ h2.fade-in.appear {
 .nav {
   visibility: hidden;
   display: none;
+  text-align: center;
   width: 100dvw;
   color: #fff;
   font-family: "Montserrat";
@@ -723,9 +724,6 @@ h2.fade-in.appear {
   width: fit-content;
   transition: ease-in 200ms;
 }
-.skills .skills-container .icon {
-  width: clamp(0.5em, 6vw, 2em);
-}
 .skills .skills-container a {
   text-decoration: none;
   font-family: "Montserrat";
@@ -790,10 +788,10 @@ h2.fade-in.appear {
   row-gap: 5px;
 }
 .contact-section form ::-moz-placeholder {
-  color: rgba(173, 241, 255, 0.9);
+  color: rgba(173, 241, 255, 0.5);
 }
 .contact-section form ::placeholder {
-  color: rgba(173, 241, 255, 0.9);
+  color: rgba(173, 241, 255, 0.5);
 }
 .contact-section form .contact-input {
   width: clamp(3em, 70vw, 20em);
@@ -802,10 +800,20 @@ h2.fade-in.appear {
   text-decoration: none;
   resize: none;
   background-color: transparent;
-  outline: none;
 }
-.contact-section form .contact-input:focus {
-  border: #38f9d7;
+.contact-section form input:focus {
+  outline: none;
+  border-bottom: 2px solid rgba(173, 241, 255, 0.25);
+}
+.contact-section form textarea:focus {
+  outline: none;
+  border: 2px solid rgba(173, 241, 255, 0.25);
+}
+.contact-section form .contact-input::-moz-placeholder:focus {
+  color: rgba(56, 121, 212, 0.5);
+}
+.contact-section form .contact-input::placeholder:focus {
+  color: rgba(56, 121, 212, 0.5);
 }
 .contact-section form input {
   margin: 0;
