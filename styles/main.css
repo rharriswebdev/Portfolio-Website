@@ -342,7 +342,7 @@ h2.fade-in.appear {
   position: absolute;
   right: 5px;
   display: inline-block;
-  width: 14%;
+  width: 4em;
   z-index: 100;
   cursor: pointer;
   margin: 2em 2em;
@@ -476,7 +476,7 @@ h2.fade-in.appear {
 .nav {
   visibility: hidden;
   display: none;
-  width: 100%;
+  width: 100dvw;
   color: #fff;
   font-family: "Montserrat";
   font-size: clamp(0.2rem, 2vw, 2em);
@@ -691,7 +691,7 @@ h2.fade-in.appear {
   font-family: "Inter";
   font-weight: 500;
   color: white;
-  font-size: clamp(1em, 7vw, 4em);
+  font-size: clamp(1em, 7vw, 3em);
   margin: auto;
   width: -moz-fit-content;
   width: fit-content;
@@ -700,7 +700,7 @@ h2.fade-in.appear {
 .skills .skills-undrln {
   background-color: #B7E8BA;
   width: clamp(1em, 16vw, 8em);
-  height: 1vw;
+  height: 8px;
   margin: auto;
   border-radius: 15px;
   margin-bottom: 4em;
@@ -719,8 +719,12 @@ h2.fade-in.appear {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50vw;
+  width: -moz-fit-content;
+  width: fit-content;
   transition: ease-in 200ms;
+}
+.skills .skills-container .icon {
+  width: clamp(0.5em, 6vw, 2em);
 }
 .skills .skills-container a {
   text-decoration: none;
@@ -824,6 +828,10 @@ h2.fade-in.appear {
   color: #fff;
   cursor: pointer;
   border: none;
+  transition: 200ms;
+}
+.contact-section form button:hover {
+  background-color: #90C5D0;
 }
 
 footer {
@@ -899,5 +907,15 @@ footer {
   }
   .desktop-nav .desktop-a:hover {
     color: #90C5D0;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 2em;
+  }
+  .skills-container {
+    border-left: 5px solid #B7E8BA;
   }
 }/*# sourceMappingURL=main.css.map */
