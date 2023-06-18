@@ -417,7 +417,7 @@ h2.fade-in.appear {
   font-size: 25px;
 }
 
-.mobile-nav a:hover {
+.mobile-nav a:hover, a:focus {
   color: #E7E98F;
 }
 
@@ -578,7 +578,7 @@ h2.fade-in.appear {
   border-radius: 50%;
   transition: 200ms;
 }
-.intro .code-container .toolbar .red:hover {
+.intro .code-container .toolbar .red:hover, .intro .code-container .toolbar .red:focus {
   background-color: #ff0000;
   box-shadow: 0 0 0.2rem #E55A5A, 0 0 0.2rem #E55A5A, 0 0 2rem #E55A5A, 0 0 0.8rem #ff0000, 0 0 2.8rem #ff0000, inset 0 0 1.3rem #ff0000;
 }
@@ -592,7 +592,7 @@ h2.fade-in.appear {
   border-radius: 50%;
   transition: 200ms;
 }
-.intro .code-container .toolbar .yellow:hover {
+.intro .code-container .toolbar .yellow:hover, .intro .code-container .toolbar .yellow:focus {
   background-color: #fcff45;
   box-shadow: 0 0 0.2rem #E7E98F, 0 0 0.2rem #E7E98F, 0 0 2rem #E7E98F, 0 0 0.8rem #fcff45, 0 0 2.8rem #fcff45, inset 0 0 1.3rem #fcff45;
 }
@@ -606,7 +606,7 @@ h2.fade-in.appear {
   border-radius: 50%;
   transition: 200ms;
 }
-.intro .code-container .toolbar .green:hover {
+.intro .code-container .toolbar .green:hover, .intro .code-container .toolbar .green:focus {
   background-color: #04ff00;
   box-shadow: 0 0 0.2rem #64B963, 0 0 0.2rem #64B963, 0 0 2rem #64B963, 0 0 0.8rem #04ff00, 0 0 2.8rem #04ff00, inset 0 0 1.3rem #04ff00;
 }
@@ -723,6 +723,8 @@ h2.fade-in.appear {
   width: -moz-fit-content;
   width: fit-content;
   transition: ease-in 200ms;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .skills .skills-container a {
   text-decoration: none;
@@ -731,6 +733,9 @@ h2.fade-in.appear {
   font-size: clamp(16px, 5vw, 40px);
   align-self: center;
   color: white;
+  opacity: 0;
+  transform: translateY(-75%);
+  transition: 400ms;
 }
 .skills .skills-container .html-icon {
   width: 40vw;
@@ -746,8 +751,12 @@ h2.fade-in.appear {
   margin: none;
   max-width: 12em;
 }
-.skills .skills-container .sk-crd:hover {
+.skills .skills-container .sk-crd:hover, .skills .skills-container .sk-crd:focus {
   transform: scale(1.15);
+}
+.skills .skills-container .sk-crd:hover a, .skills .skills-container .sk-crd:focus a {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .contact-section {
@@ -792,6 +801,12 @@ h2.fade-in.appear {
 }
 .contact-section form ::placeholder {
   color: rgba(173, 241, 255, 0.5);
+}
+.contact-section form :focus::-moz-placeholder {
+  color: rgba(173, 241, 255, 0.2);
+}
+.contact-section form :focus::placeholder {
+  color: rgba(173, 241, 255, 0.2);
 }
 .contact-section form .contact-input {
   width: clamp(3em, 70vw, 20em);
@@ -838,7 +853,7 @@ h2.fade-in.appear {
   border: none;
   transition: 200ms;
 }
-.contact-section form button:hover {
+.contact-section form button:hover, .contact-section form button:focus {
   background-color: #90C5D0;
 }
 
@@ -913,7 +928,7 @@ footer {
     margin: 0 4em;
     transform: translateX(-24px);
   }
-  .desktop-nav .desktop-a:hover {
+  .desktop-nav .desktop-a:hover, .desktop-nav .desktop-a:focus {
     color: #90C5D0;
   }
   .skills {

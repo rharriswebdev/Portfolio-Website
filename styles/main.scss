@@ -113,7 +113,7 @@ h2.fade-in.appear {
     font-size: 25px;
     }
 
-    .mobile-nav a:hover {
+    .mobile-nav a:hover, a:focus {
         color: #E7E98F;
     }
 
@@ -318,7 +318,7 @@ font-size:clamp(.2rem, 2vw, 2em);
                 transition: 200ms;
             }
 
-            .red:hover {
+            .red:hover, .red:focus {
                 background-color: #ff0000;
                 box-shadow: 0 0 .2rem #E55A5A,
                 0 0 .2rem #E55A5A,
@@ -339,7 +339,7 @@ font-size:clamp(.2rem, 2vw, 2em);
                 transition: 200ms;
             }
 
-            .yellow:hover {
+            .yellow:hover, .yellow:focus {
                 background-color: #fcff45;
                 box-shadow: 0 0 .2rem #E7E98F,
                 0 0 .2rem #E7E98F,
@@ -360,7 +360,7 @@ font-size:clamp(.2rem, 2vw, 2em);
                 transition: 200ms;
             }
             
-            .green:hover {
+            .green:hover, .green:focus {
                 background-color: #04ff00;
                 box-shadow: 0 0 .2rem #64B963,
                 0 0 .2rem #64B963,
@@ -501,6 +501,7 @@ font-size:clamp(.2rem, 2vw, 2em);
             justify-content: center;
             width: fit-content;
             transition: ease-in 200ms;
+            height: fit-content;
         }
 
 
@@ -512,7 +513,9 @@ font-size:clamp(.2rem, 2vw, 2em);
             font-size: clamp(16px, 5vw, 40px);
             align-self: center;
             color: white;
-            
+            opacity: 0;
+            transform: translateY(-75%);
+            transition: 400ms;
         }
 
         .html-icon {
@@ -531,9 +534,13 @@ font-size:clamp(.2rem, 2vw, 2em);
         }
 
        
-        .sk-crd:hover {
+        .sk-crd:hover, .sk-crd:focus {
             transform: scale(1.15);
 
+            a {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     }
 
@@ -581,6 +588,10 @@ font-size:clamp(.2rem, 2vw, 2em);
 
         ::placeholder {
             color: rgba($color: #adf1ff, $alpha: 0.5);
+        }
+
+        :focus::placeholder {
+            color: rgba($color: #adf1ff, $alpha: 0.2);
         }
 
         .contact-input {
@@ -638,7 +649,7 @@ font-size:clamp(.2rem, 2vw, 2em);
             transition: 200ms;
         }
 
-        button:hover {
+        button:hover, button:focus {
             background-color: #90C5D0;
         }
     }
@@ -722,7 +733,7 @@ footer {
         transform: translateX(-24px);
     }
 
-    .desktop-a:hover {
+    .desktop-a:hover, .desktop-a:focus {
         color: #90C5D0 ;
     }
   }
