@@ -759,6 +759,25 @@ h2.fade-in.appear {
   transform: translateY(0);
 }
 
+.project-container {
+  width: 100%;
+  background-color: transparent;
+  padding: 2em;
+}
+.project-container h3 {
+  font-family: "Inter";
+  font-weight: 500;
+  color: white;
+  font-size: clamp(1em, 7vw, 3em);
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 2em;
+}
+.project-container .project1-wrapper {
+  margin: 4em 0;
+}
+
 .contact-section {
   height: -moz-fit-content;
   height: fit-content;
