@@ -545,6 +545,28 @@ font-size:clamp(.2rem, 2vw, 2em);
     }
 
 
+
+}
+
+.project-container {
+    width: 100%;
+    background-color: transparent;
+    padding: 2em;
+    
+    h3 {
+        font-family: 'Inter';
+        font-weight: 500;
+        color: white;
+        font-size: clamp(1em, 7vw, 3em);
+        margin: auto;
+        width: fit-content;
+        margin-top: 2em;
+    }
+
+    .project1-wrapper {
+        margin: 4em 0;
+        
+    }
 }
 
 .contact-section {
