@@ -1,10 +1,10 @@
 @import "colors";
 @import "typography";
 @import "normalize";
-/* {
+* {
     border: 1px solid red;
 
-} */
+} 
 *,
 *::before,
 *::after {
@@ -552,6 +552,8 @@ font-size:clamp(.2rem, 2vw, 2em);
     width: 100%;
     background-color: transparent;
     padding: 2em;
+    display: grid;
+    place-content: center;
     
     h3 {
         font-family: 'Inter';
@@ -565,7 +567,7 @@ font-size:clamp(.2rem, 2vw, 2em);
 
     .project1-wrapper {
         margin: 4em 0;
-        
+        width: clamp(2em, 80vw, 65em);
     }
 }
 
@@ -768,10 +770,16 @@ footer {
 
   .skills {
     display: grid;
+    place-content: center;
+  }
+
+  .sk-container {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     padding: 4em 2em;
+    width: clamp(10em, 80vw, 70em);
   }
 
   .skills-container {
