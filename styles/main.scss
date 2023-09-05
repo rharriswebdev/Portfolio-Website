@@ -70,6 +70,10 @@ h2.fade-in.appear {
     opacity: 0;
 }
 
+.hamburger .hamburger.is-active {
+    position: sticky;
+}
+
 .no-scroll {
     overflow-y: hidden;
 }
@@ -99,6 +103,7 @@ h2.fade-in.appear {
 
 
     .mobile-nav a {
+    position: sticky;
     display: block;
     text-align: center;
     margin-bottom: 12rem;
@@ -710,17 +715,29 @@ footer {
 .github {
     width: 2em;
     margin: 0 1.25rem;
+    
 }
 
 .linkedin {
     width: 2.25em;
     margin: 0 1.25rem;
     transform: translateY(2px);
+    filter: grayscale(1);
+    transition: filter 100ms;
+}
+
+.linkedin:hover {
+    filter: grayscale(0);
 }
 
 .replit {
     width: 1.75em;
     margin: 0 1.25em;
+    filter: grayscale(1);
+}
+
+.replit:hover {
+    filter: grayscale(0);
 }
 
 .codepen {
