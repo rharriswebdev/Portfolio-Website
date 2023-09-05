@@ -13,12 +13,13 @@ window.onload = function () {
 
     const menu_btn = document.querySelector('.hamburger');
     const mobile_menu = document.querySelector('.mobile-nav');
+    const no_scroll = document.querySelector('.wrapper-all')
 
     menu_btn.addEventListener('click', function () {
       menu_btn.classList.toggle('is-active');
       mobile_menu.classList.toggle('is-active');
-      document.body.classList.toggle('no-scroll');
-      document.html.classList.toggle('no-scroll');
+      no_scroll.classList.toggle('no-scroll');
+      
 
     });
 

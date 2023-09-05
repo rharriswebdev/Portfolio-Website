@@ -309,10 +309,10 @@ template {
   display: none;
 }
 
-/* {
-    border: 1px solid red;
+* {
+  border: 1px solid red;
+}
 
-} */
 *,
 *::before,
 *::after {
@@ -322,6 +322,12 @@ template {
 body {
   background-color: #536954;
   overflow-y: overlay;
+}
+
+.wrapper-all {
+  padding: 0;
+  margin: 0;
+  width: 100dvw;
 }
 
 .fade-in {
@@ -383,6 +389,7 @@ h2.fade-in.appear {
 
 .no-scroll {
   overflow-y: hidden;
+  position: fixed;
 }
 
 .mobile-nav {
