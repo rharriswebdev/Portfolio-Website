@@ -403,8 +403,8 @@ h2.fade-in.appear {
   z-index: 99;
   padding-top: 20em;
   background-color: #536954;
-  transition: all 0.8s ease-out;
-  clip-path: circle(100px at 100% -20%);
+  transition: all 1s;
+  clip-path: circle(100px at 100% -30%);
   -webkit-clip-path: circle(100px at 100% -20%);
 }
 
@@ -412,6 +412,7 @@ h2.fade-in.appear {
   width: 100%;
   -webkit-clip-path: circle(100%);
   clip-path: circle(100%);
+  transition: all 3s;
 }
 
 .mobile-nav a {
