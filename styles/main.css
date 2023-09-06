@@ -644,6 +644,10 @@ h2.fade-in.appear {
 .intro .code-container .indent {
   margin-left: 20px;
 }
+.intro .toolbar-btn {
+  border: none;
+  padding: 0;
+}
 .intro .typed-js {
   display: inline;
   width: auto;
@@ -776,7 +780,7 @@ h2.fade-in.appear {
 .project-container {
   width: 100%;
   background-color: transparent;
-  padding: 2em;
+  padding: 2em 2em 10em 2em;
   display: grid;
   place-content: center;
 }

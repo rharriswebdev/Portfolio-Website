@@ -415,6 +415,11 @@ font-size:clamp(.2rem, 2vw, 2em);
 
     }
 
+    .toolbar-btn {
+        border: none;
+        padding: 0;
+    }
+
 .typed-js {
     display: inline;
     width: auto;
@@ -564,9 +569,10 @@ font-size:clamp(.2rem, 2vw, 2em);
 .project-container {
     width: 100%;
     background-color: transparent;
-    padding: 2em;
+    padding: 2em 2em 10em 2em;
     display: grid;
     place-content: center;
+
     
     h3 {
         font-family: 'Inter';
