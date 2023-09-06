@@ -55,3 +55,24 @@ faders.forEach(fader => {
 sliders.forEach(slider => {
   appearOnScroll.observe(slider);
 });
+
+window.onload = function() {
+
+const redButton = document.querySelector(".red")
+const greenButton = document.querySelector(".green")
+const yellowButton = document.querySelector(".yellow")
+const codeWindow = document.querySelector(".code-container")
+
+redButton.addEventListener("click", function(){
+  codeWindow.classList.toggle('exit');
+})
+
+greenButton.addEventListener("click", function(){
+
+})
+
+yellowButton.addEventListener("click", function(){
+
+})
+
+}
