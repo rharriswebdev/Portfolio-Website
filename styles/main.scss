@@ -219,6 +219,8 @@ font-size:clamp(.2rem, 2vw, 2em);
     text-decoration: none;
 }
 
+
+
 .intro {
 
     display: grid;
@@ -289,7 +291,12 @@ font-size:clamp(.2rem, 2vw, 2em);
             flex-wrap: wrap;
         
         }
+
         
+      
+        
+
+
     .code-container {
         width: clamp(14em, 60vw, 35em);
         display: grid;
@@ -298,10 +305,12 @@ font-size:clamp(.2rem, 2vw, 2em);
         height: 18em;
         border-radius: 9px;
         background-color: #0D0C38;
-        
+        transition: opacity 10ms, all 200ms;
         padding: 0 0 4em 0;
         box-shadow: 5px 10px 20px black;
 
+        
+        
        
 
 
@@ -329,6 +338,8 @@ font-size:clamp(.2rem, 2vw, 2em);
                 height: 10px;
                 border-radius: 50%;
                 transition: 200ms;
+
+               
             }
 
             .red:hover, .red:focus {
@@ -415,6 +426,10 @@ font-size:clamp(.2rem, 2vw, 2em);
 
     }
 
+   
+
+    
+
     .toolbar-btn {
         border: none;
         padding: 0;
@@ -431,6 +446,43 @@ font-size:clamp(.2rem, 2vw, 2em);
     margin-top: 30px;
 }
 
+}
+
+.dock {
+    display: none;
+}
+
+.dock.minimize {
+    width: 40%;
+    height: 6em;
+    margin: 0;
+    position: fixed;
+    z-index: 100;
+    background: hsla(0, 0%, 0%, 0.5);
+    border-radius: 18px;
+    display: block;
+}
+
+.code-container.minimize {
+    position: fixed;
+    scale: .25;
+    z-index: 200;
+}
+
+  .code-container.exit {
+    opacity: 0;
+}
+
+.code-container.maximize {
+    display: block;
+position: fixed;
+//bottom: 100%;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+min-height: 105vh;
+z-index: 99;
 }
 
 .from-top {

@@ -62,17 +62,26 @@ const redButton = document.querySelector(".red")
 const greenButton = document.querySelector(".green")
 const yellowButton = document.querySelector(".yellow")
 const codeWindow = document.querySelector(".code-container")
+const dock = document.querySelector('.dock')
 
 redButton.addEventListener("click", function(){
   codeWindow.classList.toggle('exit');
 })
 
 greenButton.addEventListener("click", function(){
-
+  codeWindow.classList.toggle('maximize')
 })
 
 yellowButton.addEventListener("click", function(){
+  dock.classList.toggle('minimize')
+  codeWindow.classList.toggle('minimize')
+})
 
+dock.addEventListener("click", function() {
+  
+    codeWindow.classList.toggle('minimize')
+    dock.classList.remove('minimize')
+  
 })
 
 }
