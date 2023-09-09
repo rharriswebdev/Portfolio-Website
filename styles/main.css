@@ -692,7 +692,7 @@ h2.fade-in.appear {
   height: 100%;
   width: 100%;
   min-height: 105vh;
-  z-index: 99;
+  z-index: 101;
 }
 
 .from-top {
