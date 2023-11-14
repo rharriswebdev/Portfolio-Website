@@ -460,7 +460,8 @@ font-size:clamp(.2rem, 2vw, 2em);
     z-index: 100;
     background: hsla(0, 0%, 0%, 0.5);
     border-radius: 18px;
-    display: block;
+    display: grid;
+    place-self: center;
 }
 
 .code-container.minimize {
